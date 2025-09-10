@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* layout */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 40px;
+}
+
+/* box */
+.box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* characters */
+.search-box {
+  margin: 15px 0;
+}
+.search-box input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.char-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.2s;
+}
+.char-card:hover {
+  transform: scale(1.05);
+}
+.char-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* details */
+.char-details img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.char-details h2 {
+  margin: 10px 0;
+}
+.char-details p {
+  margin: 5px 0;
+}
+
+/* Dashboard container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  text-align: center;
+}
+.dashboard h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.dashboard form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.dashboard input {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.dashboard button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dashboard button:hover {
+  background-color: #555;
+}
+
+/* nav */
+nav {
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+nav a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav span {
+  color: #666;
+  margin: 0 5px;
+}
+
+
+/* general button */
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover {
+  background: #555;
+}
+
+.btns {
+  margin-top: 15px;
+}

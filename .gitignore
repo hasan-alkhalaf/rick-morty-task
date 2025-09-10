@@ -1,0 +1,6 @@
+// .gitignore placeholder for rick-morty-frontend
+node_modules/
+.next/
+dist/
+*.log
+.env
